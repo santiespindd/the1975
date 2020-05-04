@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+	--primary-color: #3a4052;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 3.75em;
+	line-height: 1.2;
+	margin-bottom: 0.938em;
+}
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 1.25em;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.625em 1.875em;
+	background: black;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 1.563em;
+	opacity: 0.7;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+.playlist{
+	display: flex;
+	justify-content: center;
+}
+#music{
+	background-color: #efefef;
+}
+#music iframe{
+	margin-bottom: 40px;
+}
+ #music h1{
+	 padding-top: 40px;
+	text-align: center;
+	 }
+#about {
+	background-color: black;
+	color:#efefef;
+	padding: 40px;
+	text-align: center;
+}
+
+#about p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#about h2 {
+	margin: 30px 0;
+	font-size: 1em;
+	color: #efefef;
+}
+
+.social a {
+	margin: 0 5px;
+}
+i {
+	color:#efefef;
+}
+
+footer{
+	background-color:  #efefef;
+	padding: 2.2rem;
+}
+.center{
+	text-align: center;
+	margin:auto;
+}
